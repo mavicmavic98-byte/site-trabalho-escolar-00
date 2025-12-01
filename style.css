@@ -9,7 +9,6 @@
     font-family: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     color-scheme: light;
 }
-*{box-sizing:border-box;}
 html,body{height:100%;}
 body{
     margin:0;
@@ -45,7 +44,6 @@ p.lead{color:var(--muted);margin:0.6rem 0 1rem;font-size:1.1rem;}
 .btn-outline{border:1px solid rgba(107,63,43,0.12);background:transparent;color:var(--accent);}
 .card{background:var(--card);border-radius:14px;padding:1rem;box-shadow:var(--shadow);}
 .card:hover{transform:translateY(-6px);transition:transform .18s ease;}
-.foo1{background: linear-gradient(180deg, rgba(255,250,246,0.9), rgba(255,250,246,0.6));border-top: 1px solid rgba(107,63,43,0.06);backdrop-filter: blur(6px);margin-top:2rem;}
 .category h2{font-family:"Playfair Display",serif;font-size:1.8rem;}
 /* Menu grid */
 .menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
@@ -71,6 +69,7 @@ input,textarea,button{font:inherit;padding:.6rem .7rem;border-radius:10px;border
 textarea{min-height:110px;resize:vertical}
 .small{font-size:.9rem;color:var(--muted)}
 /* Footer */
+.foo1{background: linear-gradient(180deg, rgba(255,250,246,0.9), rgba(255,250,246,0.6));border-top: 1px solid rgba(107,63,43,0.06);backdrop-filter: blur(6px);margin-top:2rem;}
 footer{display: flex;background: linear-gradient(180deg, rgba(255, 183, 124, 0.9), rgba(143, 95, 56, 0.6));border-top: 1px solid rgba(107,63,43,0.06);backdrop-filter: blur(8px);padding:2rem 0;color:var(--muted);text-align:center;font-size:.95rem;margin-top:2rem;}    
 /* Responsive */
 @media (min-width:900px){
