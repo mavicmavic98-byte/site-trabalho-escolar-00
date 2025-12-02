@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Café Espresso — Apresentação do Item</title>
-    <meta name="description" content="Detalhes do Café Espresso." />
+    <title>Café Latte — Apresentação do Item</title>
+    <meta name="description" content="Detalhes do Café Latte." />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="styleto.css" />
@@ -34,40 +34,40 @@
     <main class="container">
         <article class="card" aria-labelledby="item-title" role="region">
             <div class="photo" aria-hidden="false">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrbZ30ACpLnGcvYX5uwXWPUR8sbf1paezFdA&s" alt="Xícara de Café Espresso com espuma cremosa">
+                <img src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/314D11A6-4457-4C70-A1BE-A6C25F597C18/Derivates/B362DC69-6AAA-43E1-AF51-184463E8551B.jpg" alt="Xícara de Café Latte">
             </div>
             <div class="meta">
                 <div class="title">
-                    <h1 id="item-title">Café Espresso</h1>
+                    <h1 id="item-title">Latte</h1>
                     <div class="badge" aria-hidden="true">Bestseller</div>
                 </div>
                 <p class="desc">
-                    O sabor do espresso é concentrado e impactante. Ele não é uma bebida para matar a sede, mas para ser degustada.
+                    Uma bebida quente e reconfortante, a experiência será focada na pureza do café e uma mistura adocicada de especiarias.
                 </p>
                 <div class="tags" aria-hidden="true">
                     <span class="tag">Quente</span>
-                    <span class="tag">Sem leite</span>
-                    <span class="tag">Sem lactose</span>
+                    <span class="tag">Com leite</span>
+                    <span class="tag">Com lactose</span>
                 </div>
                 <div class="info" aria-hidden="true">
-                    <span>Preparação: 2–5 min</span>
+                    <span>Preparação: 4–8 min</span>
                     <span>•</span>
-                    <span>Calorias: ~5 kcal (Média)</span>
+                    <span>Calorias: ~110 kcal (Média)</span>
                 </div>
                 <div style="height:8px"></div>
                 <div class="price-row">
                     <div style="display:flex; flex-direction:column;">
-                        <div class="price" id="price">R$ 7,00</div>
+                        <div class="price" id="price">R$ 12,00</div>
                         <div class="info" style="margin-top:6px">
-                            <div class="allergens">.</div>
+                            <div class="allergens">Alérgenos: Leite</div>
                         </div>
                     </div>
                     <div style="display:flex;flex-direction:column;align-items:flex-end;gap:12px">
                         <div class="options" role="radiogroup" aria-label="Tamanhos">
                             <div class="select-size" role="group" aria-label="Tamanhos">
                                 <button class="size-btn active" data-size="M" data-mult="1" aria-checked="true" role="radio">M</button>
-                                <button class="size-btn" data-size="P" data-mult="0.8572" aria-checked="false" role="radio">P</button>
-                                <button class="size-btn" data-size="G" data-mult="1.143" aria-checked="false" role="radio">G</button>
+                                <button class="size-btn" data-size="P" data-mult="0.875" aria-checked="false" role="radio">P</button>
+                                <button class="size-btn" data-size="G" data-mult="1.167" aria-checked="false" role="radio">G</button>
                             </div>
                             <div style="display:flex; gap:6px; align-items:center">
                                 <button id="minus" class="btn-card ghost" aria-label="Diminuir quantidade">-</button>
@@ -104,7 +104,7 @@
         document.getElementById('year').textContent = new Date().getFullYear();
 
         (function(){
-            const base = 7.00;
+            const base = 12.00;
             const priceEl = document.getElementById('price');
             const sizeBtns = Array.from(document.querySelectorAll('.size-btn'));
             const minus = document.getElementById('minus');
@@ -146,7 +146,7 @@
 
             document.getElementById('addBtn').addEventListener('click', ()=>{
                 const size = document.querySelector('.size-btn.active').dataset.size;
-                alert(`Adicionado ao pedido: Café Espresso — Tamanho ${size} ×${qty}`);
+                alert(`Adicionado ao pedido: Café Cappuccino — Tamanho ${size} ×${qty}`);
             });
 
             document.getElementById('favBtn').addEventListener('click', function(){
